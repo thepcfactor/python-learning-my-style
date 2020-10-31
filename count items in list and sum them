@@ -1,0 +1,8 @@
+elements= 1,2,3,4,5,6
+lst=list()
+for x in elements:
+    lst.append(x)
+sum=0
+for z in lst:
+    sum= sum + int(z)
+print(sum)
