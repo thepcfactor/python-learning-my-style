@@ -1,0 +1,19 @@
+nl = []
+n = int(input("Enter the list size : "))
+if n < 3:
+    print('invalid number of inputs')
+    exit()
+else:
+
+ for i in range(0, n):
+    print("Enter number at location", i, ":")
+    item = int(input())
+    nl.append(item)
+ print("User List is ", nl)
+ for x in nl:
+    try:
+     if nl[x]>nl[x+1] and nl[x]>nl[x-1]:
+        print("required output is:",  x)
+    except:
+        print('no such mountain number found')
+        exit()
